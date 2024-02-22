@@ -1,0 +1,12 @@
+{% extends 'authenticate/base.html' %}
+
+{% block content %}
+
+<h1> Welcome to POS Homepage</h1>
+
+{% if user.is_authenticated %}
+	<p>Welcome {{user.username}}</p>
+
+{% endif %}
+
+{% endblock %}
